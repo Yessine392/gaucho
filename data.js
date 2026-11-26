@@ -435,7 +435,7 @@ export const SUJETS = [
       { valeur: 472400, unite: "", decimales: 0, label: "victimes de violences physiques enregistrées en 2025, 5 % de plus en un an", source: "ssmsiChiffres2026" },
       { valeur: 132100, unite: "", decimales: 0, label: "victimes de violences sexuelles enregistrées en 2025 (+8 %)", source: "ssmsiChiffres2026" },
     ],
-    constat: "Les violences enregistrées par la police et la gendarmerie augmentent chaque année depuis 2016. Dans l'enquête de victimation, les habitants des grandes villes se disent plus souvent inquiets dans leur quartier et dans les transports, et à peine plus d'un sur deux est satisfait de l'action de proximité des forces de l'ordre.",
+    constat: "Les violences physiques enregistrées par la police et la gendarmerie ont augmenté en moyenne de 6 % par an depuis 2016, avec des années de pause ou de baisse ; les violences sexuelles enregistrées, de 11 % par an en moyenne. Dans l'enquête de victimation, les habitants des grandes villes se disent plus souvent inquiets dans leur quartier et dans les transports, et à peine plus d'un sur deux est satisfait de l'action de proximité des forces de l'ordre.",
     constatSources: ["ssmsiChiffres2026", "ssmsiVRS"],
     propositions: [
       "Rétablir la police de proximité et maintenir toutes les gendarmeries.",
@@ -455,9 +455,9 @@ export const SUJETS = [
     question: "Comment ça se passe à l'école pour tes enfants, ou pour ceux de ton entourage ?",
     chiffres: [
       { valeur: 95, unite: " points", decimales: 0, label: "d'écart en maths à 15 ans entre élèves très favorisés et très défavorisés, contre 83 en moyenne dans l'OCDE (PISA 2025)", source: "deppPisa2025" },
-      { valeur: 4, unite: "", decimales: 0, label: "pays de l'OCDE seulement où l'origine sociale pèse plus qu'en France sur les résultats en maths (PISA 2022)", source: "hcspNiveauScolaire" },
+      { valeur: 4, unite: "", decimales: 0, label: "pays de l'OCDE seulement où le lien statistique entre milieu social et résultats en maths est plus fort qu'en France (PISA 2022)", source: "hcspNiveauScolaire" },
     ],
-    constat: "Les résultats des élèves de 15 ans baissent en France comme dans l'OCDE. Mais la France reste l'un des pays où le milieu social des parents pèse le plus sur la réussite, en lecture comme en maths.",
+    constat: "Les résultats des élèves de 15 ans baissent dans toute l'OCDE, et un peu plus vite en France en maths. Mais la France reste l'un des pays où le milieu social des parents pèse le plus sur la réussite, en lecture comme en maths.",
     constatSources: ["deppPisa2025", "hcspNiveauScolaire"],
     propositions: [
       "Aller vers la gratuité intégrale de l'école : cantine, fournitures, transports, activités périscolaires.",
@@ -479,7 +479,7 @@ export const SUJETS = [
       { valeur: 8.2, unite: " %", decimales: 1, label: "de chômage au 3e trimestre 2026, 0,4 point de plus en un an", source: "inseeChomageT3" },
       { valeur: 150000, unite: "", decimales: 0, label: "chômeurs de plus en un an, pour 2,6 millions au total", source: "inseeChomageT3" },
     ],
-    constat: "Après des années de baisse, le chômage remonte depuis 2025. Au 2e trimestre 2026, il a atteint son plus haut niveau depuis 2019, en dehors de la crise sanitaire.",
+    constat: "Après des années de baisse, le chômage remonte depuis 2025. Au 2e trimestre 2026, il a atteint son plus haut niveau depuis 2019, en dehors de la crise sanitaire. Selon l'Insee, une partie de la hausse vient de l'inscription automatique de nouveaux publics à France Travail (loi plein emploi), qui sont alors davantage comptés comme chômeurs.",
     constatSources: ["inseeChomageT2", "inseeChomageT3"],
     propositions: [
       "Abroger les réformes de l'assurance chômage.",
@@ -547,14 +547,14 @@ export const OBJECTIONS = [
     id: "fraude",
     objection: "Avant de parler d'impôts, il faut arrêter la fraude aux aides sociales.",
     vrai: "La fraude sociale existe : environ 14 milliards d'euros par an selon le Haut Conseil du financement de la protection sociale, fraude non découverte comprise.",
-    reponse: "Plus de la moitié (52 %) vient de cotisations non payées, surtout du travail dissimulé par des employeurs ; 36 % vient des allocataires et 12 % de professionnels de santé. La fraude fiscale, elle, n'a même pas d'estimation officielle d'ensemble, et la Cour des comptes la juge « mal connue ». Lutter contre toutes les fraudes, oui : la gauche proposait aussi des recrutements contre la fraude fiscale et douanière.",
+    reponse: "Plus de la moitié (52 %) vient de cotisations non payées par des entreprises et des travailleurs indépendants, notamment par du travail dissimulé ; 36 % vient des allocataires et 12 % de professionnels de santé. La fraude fiscale, elle, n'a même pas d'estimation officielle d'ensemble, et la Cour des comptes la juge « mal connue ». Lutter contre toutes les fraudes, oui : la gauche proposait aussi des recrutements contre la fraude fiscale et douanière.",
     sources: ["fraudeMinistere", "fraudeTF1", "ofceNFP"],
   },
   {
     id: "heritage",
     objection: "Taxer l'héritage, c'est taxer deux fois le travail d'une vie.",
-    vrai: "L'héritage touche à l'intime, et la France est déjà le pays de l'OCDE où ces droits pèsent le plus dans le PIB (0,74 %).",
-    reponse: "Chaque enfant peut recevoir 100 000 € de chacun de ses parents sans rien payer. La moitié des Français héritera de moins de 70 000 € dans sa vie, et la part du patrimoine hérité est passée de 35 % à 60 % depuis les années 1970. Ce sont surtout les très grandes transmissions qui profitent des exonérations (assurance-vie, pacte Dutreil) : c'est là que se joue la justice, pas sur la maison familiale.",
+    vrai: "L'héritage touche à l'intime, et la France est déjà le pays de l'OCDE où les droits sur les successions et les donations pèsent le plus dans le PIB (0,74 %). Une bonne part de ces recettes vient des héritages hors ligne directe (neveux, frères et sœurs), taxés jusqu'à 60 %.",
+    reponse: "Chaque enfant peut recevoir 100 000 € de chacun de ses parents sans rien payer. La moitié des Français héritera de moins de 70 000 € dans sa vie, et la part du patrimoine hérité serait passée de 35 % à environ 60 % depuis les années 1970 (une estimation à prendre avec prudence, selon la Cour des comptes). Ce sont surtout les très grandes transmissions qui profitent des exonérations (assurance-vie, pacte Dutreil) : c'est là que se joue la justice, pas sur la maison familiale.",
     sources: ["caeHeritage", "ccomptesSuccessions"],
   },
   {
@@ -692,7 +692,7 @@ export const PROFILS = [
 
 // Ce que dit la recherche sur les conversations politiques.
 export const RECHERCHE_DIALOGUE = {
-  texte: "Des expériences de terrain, surtout aux États-Unis, montrent qu'une conversation sans jugement, où l'on échange des histoires personnelles, peut faire évoluer des opinions de façon modeste mais durable, alors que les arguments seuls ont souvent peu d'effet. Ces études portent surtout sur des attitudes (envers les immigrés, les personnes trans), pas directement sur le vote. En France, le porte-à-porte de 2012 n'a pas changé la participation, mais a eu un effet modeste et réel sur le vote.",
+  texte: "Des expériences de terrain, surtout aux États-Unis, montrent qu'une conversation sans jugement, où l'on échange des histoires personnelles, peut faire évoluer des opinions de façon modeste mais durable, alors que les arguments seuls ont souvent peu d'effet. Ces études portent surtout sur des attitudes (envers les immigrés, les personnes trans), pas directement sur le vote. En France, le porte-à-porte de la campagne de François Hollande en 2012 n'a pas changé la participation, mais a eu un effet modeste et réel sur le vote.",
   sources: ["kalla2020", "broockman2016", "pons2018"],
 };
 
