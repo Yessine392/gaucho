@@ -12,11 +12,11 @@ export const SOURCES = {
     date: "juillet 2025",
     url: "https://www.insee.fr/fr/statistiques/8600989",
   },
-  inseePauvrete2024: {
-    titre: "L'essentiel sur… la pauvreté",
-    editeur: "Insee",
+  inseePauvrete2117: {
+    titre: "En 2024, le taux de pauvreté est stable et les inégalités atteignent un niveau inédit depuis trente ans",
+    editeur: "Insee Première n° 2117",
     date: "juillet 2026",
-    url: "https://www.insee.fr/fr/statistiques/5759045",
+    url: "https://www.insee.fr/fr/statistiques/9019316",
   },
   ippMilliardaires: {
     titre: "Quels impôts les milliardaires paient-ils ? (note n° 92)",
@@ -132,6 +132,18 @@ export const SOURCES = {
     date: "novembre 2021",
     url: "https://www.lafinancepourtous.com/2021/11/17/limmigration-nest-pas-un-fardeau-pour-les-finances-publiques",
   },
+  montaigneRetraites: {
+    titre: "Législatives 2024 : abroger la réforme des retraites et restaurer la retraite à 60 ans (chiffrage)",
+    editeur: "Institut Montaigne (think tank libéral)",
+    date: "juillet 2024",
+    url: "https://www.institutmontaigne.org/legislatives-2024/nouveau-front-populaire/abroger-la-reforme-des-retraites-restaurer-la-retraite-a-60-ans-en-prenant-en-compte-le-rsa-en-portant-le-minimum-contributif-au-smic",
+  },
+  scrutinZucman2026: {
+    titre: "Analyse du scrutin n° 8859 : taxe Zucman, projet de loi de finances pour 2027",
+    editeur: "Assemblée nationale",
+    date: "16 octobre 2026",
+    url: "https://www.assemblee-nationale.fr/dyn/17/scrutins/8859",
+  },
   programmeNFP: {
     titre: "Contrat de législature du Nouveau Front populaire",
     editeur: "Nouveau Front populaire",
@@ -180,18 +192,18 @@ export const SUJETS = [
     couleur: "#ff4d6d",
     question: "Qu'est-ce qui pèse le plus dans ton budget en ce moment ?",
     chiffres: [
-      { valeur: 15.4, unite: "%", decimales: 1, label: "de la population sous le seuil de pauvreté en 2023, le niveau le plus haut depuis 1996", source: "inseePauvrete" },
-      { valeur: 9.8, unite: " M", decimales: 1, label: "de personnes pauvres, 650 000 de plus en un an", source: "inseePauvrete" },
+      { valeur: 15.4, unite: "%", decimales: 1, label: "de la population sous le seuil de pauvreté en 2024, comme en 2023 : le niveau le plus haut depuis 1996", source: "inseePauvrete2117" },
+      { valeur: 9.8, unite: " M", decimales: 1, label: "de personnes pauvres en 2024, après un bond de 650 000 en 2023", source: "inseePauvrete2117" },
     ],
-    constat: "En 2023, le niveau de vie des 10 % les plus modestes a reculé en euros constants pendant que celui des plus aisés progressait nettement, porté par les revenus financiers. Le taux de pauvreté est resté à 15,4 % en 2024.",
-    constatSources: ["inseePauvrete", "inseePauvrete2024"],
+    constat: "La pauvreté a bondi en 2023 et ne recule pas en 2024. Surtout, les inégalités de niveau de vie atteignent en 2024 leur niveau le plus élevé depuis trente ans (indice de Gini de 0,302), portées par les revenus du patrimoine des plus aisés.",
+    constatSources: ["inseePauvrete2117", "inseePauvrete"],
     propositions: [
       "Porter le SMIC à 1 600 € net et indexer les salaires sur l'inflation.",
       "Bloquer les prix des produits de première nécessité (alimentation, énergie, carburants).",
       "Revaloriser les APL de 10 % et le point d'indice des fonctionnaires.",
     ],
     propositionsSource: ["programmeNFP"],
-    nuance: "Le coût et l'effet sur l'emploi d'un SMIC à 1 600 € sont débattus : selon les chiffrages compilés par l'OFCE, de 3 à 23 milliards d'euros, et l'Institut Montaigne estimait jusqu'à 230 000 à 380 000 emplois menacés. Mieux vaut le dire que se le faire opposer.",
+    nuance: "Ces propositions sont celles du programme du NFP de 2024 ; leurs chiffrages datent de cette campagne et le SMIC a été revalorisé depuis. À l'époque, le coût d'un SMIC à 1 600 € était estimé de 3 à 23 milliards d'euros selon les chiffrages compilés par l'OFCE, et l'Institut Montaigne évoquait 230 000 à 380 000 emplois menacés. Mieux vaut le dire que se le faire opposer.",
     nuanceSource: "ofceNFP",
   },
   {
@@ -202,18 +214,18 @@ export const SUJETS = [
     couleur: "#f59e0b",
     question: "Tu trouves que l'effort est bien réparti entre tout le monde ?",
     chiffres: [
-      { valeur: 26, unite: " %", decimales: 0, label: "de taux d'imposition global pour les milliardaires, contre 46 % pour les 0,1 % les plus riches", source: "ippMilliardaires" },
+      { valeur: 26, unite: " %", decimales: 0, label: "de taux d'imposition global pour les milliardaires, contre 46 % pour les 0,1 % les plus riches (données 2016)", source: "ippMilliardaires" },
       { valeur: 1228, unite: " Md€", decimales: 0, label: "de patrimoine cumulé pour les 500 plus grandes fortunes en 2024, contre 124 Md€ en 2003", source: "anRapportZucman" },
     ],
-    constat: "L'impôt est progressif pour l'immense majorité des Français, puis devient régressif tout en haut : les plus grandes fortunes laissent leurs revenus dans des sociétés et paient surtout l'impôt sur les sociétés. Côté État, les aides publiques aux entreprises atteignent au moins 211 milliards d'euros en 2023, sans évaluation d'ensemble.",
+    constat: "L'impôt est progressif pour l'immense majorité des Français, puis devient régressif tout en haut : les plus grandes fortunes laissent leurs revenus dans des sociétés et paient surtout l'impôt sur les sociétés. Côté État, les aides publiques aux entreprises atteignent jusqu'à 211 milliards d'euros en 2023 au sens le plus large (108 Md€ au sens strict), sans évaluation d'ensemble.",
     constatSources: ["ippMilliardaires", "senatAides"],
     propositions: [
-      "Un impôt plancher de 2 % sur les patrimoines de plus de 100 millions d'euros (« taxe Zucman », environ 1 800 foyers), voté par toute la gauche à l'Assemblée en février 2025.",
+      "Un impôt plancher de 2 % sur les patrimoines de plus de 100 millions d'euros (« taxe Zucman », environ 1 800 foyers), votée par toute la gauche à l'Assemblée en février 2025, puis à nouveau en octobre 2025 et en octobre 2026.",
       "Rétablir un ISF avec un volet climatique, rétablir l'exit tax et rendre l'impôt sur le revenu plus progressif (14 tranches).",
       "Conditionner les aides publiques aux entreprises à des critères sociaux et environnementaux, avec remboursement en cas de non-respect.",
     ],
-    propositionsSource: ["programmeNFP", "nosParlementairesZucman"],
-    nuance: "Le rendement de la taxe Zucman est contesté : 15 à 25 Md€ selon ses promoteurs, 3,5 à 5,5 Md€ après « effets de comportement » selon la DG Trésor, avec un risque constitutionnel. Adoptée à l'Assemblée en février 2025, elle a été rejetée au Sénat en juin 2025.",
+    propositionsSource: ["programmeNFP", "nosParlementairesZucman", "scrutinZucman2026"],
+    nuance: "Le rendement de la taxe Zucman est contesté : 15 à 25 Md€ selon ses promoteurs, 3,5 à 5,5 Md€ après « effets de comportement » selon la DG Trésor, avec un risque constitutionnel. Adoptée à l'Assemblée en février 2025, elle a été rejetée au Sénat en juin 2025, puis par les députés dans les budgets 2026 et 2027.",
     nuanceSource: "senatHautsPatrimoines",
   },
   {
@@ -247,7 +259,7 @@ export const SUJETS = [
     question: "Ton loyer ou ton crédit, ça représente quelle part de ce que tu gagnes ?",
     chiffres: [
       { valeur: 2.8, unite: " M", decimales: 1, label: "de ménages en attente d'un logement social en 2025, un record", source: "fondationLogement" },
-      { valeur: 350000, unite: "", decimales: 0, label: "personnes sans domicile, contre 143 000 en 2012", source: "fondationLogement" },
+      { valeur: 350000, unite: "", decimales: 0, label: "personnes sans domicile selon la Fondation, sur un champ plus large que les 143 000 recensées par l'Insee en 2012", source: "fondationLogement" },
     ],
     constat: "Seule une demande de logement social sur dix a reçu une réponse favorable en 2024, contre une sur six en 2017. 4,2 millions de personnes sont mal logées, et les expulsions avec le concours de la force publique ont atteint un record en 2024.",
     constatSources: ["fondationLogement"],
@@ -279,7 +291,7 @@ export const SUJETS = [
       "Un plan rail et fret, la TVA à 5,5 % sur les transports en commun et une gratuité ciblée pour les jeunes et les précaires.",
     ],
     propositionsSource: ["programmeNFP"],
-    nuance: "Le nombre de passoires baisse (836 000 de moins en deux ans), mais près de 40 % de la dernière baisse vient d'un changement de calcul du DPE, pas de travaux. Les écarts d'émissions varient selon qu'on compte par ménage ou par personne.",
+    nuance: "Le nombre de passoires baisse (836 000 de moins en deux ans), mais près de 40 % de la dernière baisse vient d'un changement de calcul du DPE, pas de travaux. Après ce changement de calcul, on compte plutôt 3,2 millions de passoires. Les écarts d'émissions entre riches et pauvres varient aussi selon les études, l'année des données et le fait de compter par ménage ou par personne.",
     nuanceSource: "onrePassoires",
   },
   {
@@ -301,8 +313,8 @@ export const SUJETS = [
       "Financer par des cotisations sur les dividendes, l'épargne salariale et les hauts salaires.",
     ],
     propositionsSource: ["programmeNFP"],
-    nuance: "Revenir à 60 ans coûte cher : 27 à 53 milliards d'euros selon les chiffrages compilés par l'OFCE. La gauche doit montrer d'où viendront ces recettes, c'est la question qui reviendra.",
-    nuanceSource: "ofceNFP",
+    nuance: "Revenir à 60 ans coûte cher : de 27 milliards d'euros par an (chiffrage repris par ses promoteurs) à 53 Md€ (gouvernement), et jusqu'à 58 Md€ avec les mesures d'accompagnement selon l'Institut Montaigne, un think tank libéral (chiffrages de 2024). La gauche doit montrer d'où viendront ces recettes, c'est la question qui reviendra.",
+    nuanceSource: "montaigneRetraites",
   },
 ];
 
@@ -312,14 +324,14 @@ export const OBJECTIONS = [
     id: "impots",
     objection: "La gauche, c'est des impôts en plus pour tout le monde.",
     vrai: "Oui, la gauche propose plus de recettes fiscales. Le nier ferait perdre toute crédibilité.",
-    reponse: "Les hausses ciblent le sommet : l'impôt plancher de 2 % ne concernerait qu'environ 1 800 foyers ayant plus de 100 millions d'euros. Aujourd'hui, les milliardaires paient un taux global de 26 %, inférieur aux 46 % des 0,1 % les plus aisés. Demander : « Tu trouves normal de payer proportionnellement plus qu'un milliardaire ? »",
+    reponse: "Les hausses ciblent le sommet : l'impôt plancher de 2 % ne concernerait qu'environ 1 800 foyers ayant plus de 100 millions d'euros. Aujourd'hui, les milliardaires paient un taux global de 26 %, inférieur aux 46 % des 0,1 % les plus aisés. Demander : « Comment tu verrais un effort juste entre un salarié et quelqu'un qui a 100 millions ? »",
     sources: ["ippMilliardaires", "senatZucman"],
   },
   {
     id: "dette",
     objection: "On n'a pas les moyens, la dette explose déjà.",
     vrai: "La dette atteint 115,7 % du PIB fin 2025 et le déficit 5,1 %. C'est un vrai sujet.",
-    reponse: "La question est de savoir qui fait l'effort. Les aides publiques aux entreprises atteignent au moins 211 Md€ par an sans évaluation d'ensemble, selon une commission du Sénat votée à l'unanimité. La gauche propose de chercher des recettes là où elles sont, plutôt que de couper dans l'hôpital ou l'école.",
+    reponse: "La question est de savoir qui fait l'effort. Selon une commission d'enquête du Sénat, les aides publiques aux entreprises ont atteint jusqu'à 211 Md€ en 2023 au sens le plus large (108 Md€ au sens strict), sans évaluation d'ensemble. La gauche propose de chercher des recettes là où elles sont, plutôt que de couper dans l'hôpital ou l'école.",
     sources: ["inseeDette", "senatAides"],
   },
   {
@@ -333,7 +345,7 @@ export const OBJECTIONS = [
     id: "tous-pareils",
     objection: "Ils sont tous pareils, voter ne change rien.",
     vrai: "La déception est compréhensible, y compris envers la gauche au pouvoir (le quinquennat Hollande en a déçu beaucoup).",
-    reponse: "Les votes changent pourtant des vies : congés payés (1936), Sécurité sociale (1945), retraite à 60 ans et 5e semaine (1982), RMI (1988), CMU (1999), mariage pour tous (2013). Plus récemment, la suspension de la réforme des retraites a été arrachée par les socialistes dans le budget 2026.",
+    reponse: "Les votes changent pourtant des vies : congés payés (1936), Sécurité sociale (1945), retraite à 60 ans et 5e semaine (1982), RMI (1988), CMU (1999), mariage pour tous (2013). Plus récemment, la suspension de la réforme des retraites a été négociée par les socialistes dans le budget de la Sécurité sociale pour 2026, même si le Sénat a voté son rétablissement.",
     sources: ["viePubliqueRetraites", "senatRetablitRetraites"],
   },
   {
@@ -347,15 +359,15 @@ export const OBJECTIONS = [
     id: "immigration",
     objection: "Le vrai problème, c'est l'immigration.",
     vrai: "La part d'immigrés a augmenté : 11,6 % de la population en 2025 (estimation provisoire), contre 7,4 % en 1975. C'est une inquiétude réelle, à écouter sans mépris.",
-    reponse: "Avec 14 % de personnes nées à l'étranger, la France est dans la moyenne de l'Union européenne (14,4 %). Selon l'OCDE, sur 2006-2018, les immigrés en France ont payé plus d'impôts et de cotisations qu'ils n'ont coûté en santé, éducation et protection sociale (+1,02 % du PIB par an) ; en ajoutant la défense, la dette et les autres biens publics, le solde devient négatif (−0,85 % du PIB). Dans les deux cas, cela n'explique pas à lui seul la dette ou les fins de mois difficiles. Ramener la discussion vers ce qui fait vraiment mal : salaires, logement, services publics.",
+    reponse: "Avec 14 % de personnes nées à l'étranger, la France est dans la moyenne de l'Union européenne (14,4 %). Selon l'OCDE, sur 2006-2018, les immigrés en France ont payé plus d'impôts et de cotisations qu'ils n'ont coûté en santé, éducation et protection sociale (+1,02 % du PIB par an) ; en ajoutant la défense, la dette et les autres biens publics, le solde devient négatif (−0,85 % du PIB). Dans les deux cas, cela n'explique pas à lui seul la dette ou les fins de mois difficiles. Les chiffres de l'Insee connaissent une rupture de série en 2024, donc prudence sur les comparaisons. Surtout, demander ce qui, concrètement, l'inquiète dans sa vie (travail, quartier, école), écouter, puis voir ensemble si salaires, logement et services publics en font partie.",
     sources: ["inseeImmigres", "inseeImmigresUE", "ocdeImmigration", "financePourTousOCDE"],
   },
   {
     id: "rn-social",
     objection: "Le RN aussi défend les petits salaires.",
     vrai: "Le RN a voté contre la réforme des retraites et parle beaucoup de pouvoir d'achat.",
-    reponse: "Sur la taxe Zucman, le RN s'est abstenu à l'Assemblée en février 2025, puis a voté contre en octobre 2025. Comparer les votes concrets, pas les discours : c'est la gauche qui a voté pour faire contribuer les très hauts patrimoines.",
-    sources: ["nosParlementairesZucman"],
+    reponse: "Sur la taxe Zucman, le RN s'est abstenu à l'Assemblée en février 2025, puis a voté contre en octobre 2025. Le 16 octobre 2026, ses 37 députés présents ont encore voté contre (rejet par 70 voix contre 35). Comparer les votes concrets, pas les discours : c'est la gauche qui a voté pour faire contribuer les très hauts patrimoines.",
+    sources: ["nosParlementairesZucman", "scrutinZucman2026"],
   },
 ];
 
@@ -365,18 +377,18 @@ export const QUIZ = [
     affirmation: "Le taux de pauvreté en France est au plus haut depuis le début de la série Insee en 1996.",
     reponse: true,
     explication: "15,4 % en 2023, stable en 2024 : un record depuis 1996.",
-    source: "inseePauvrete",
+    source: "inseePauvrete2117",
   },
   {
     affirmation: "Les milliardaires français paient proportionnellement plus d'impôts que les autres foyers aisés.",
     reponse: false,
-    explication: "Leur taux global est d'environ 26 %, contre 46 % pour les 0,1 % les plus riches (IPP).",
+    explication: "Leur taux global était d'environ 26 %, contre 46 % pour les 0,1 % les plus riches (IPP, données 2016).",
     source: "ippMilliardaires",
   },
   {
-    affirmation: "Les aides publiques aux entreprises représentent au moins 200 milliards d'euros par an.",
+    affirmation: "Les aides publiques aux entreprises dépassent 100 milliards d'euros par an.",
     reponse: true,
-    explication: "Au moins 211 Md€ en 2023, selon une commission d'enquête du Sénat.",
+    explication: "108 Md€ en 2023 au sens strict, et jusqu'à 211 Md€ au sens le plus large, selon une commission d'enquête du Sénat.",
     source: "senatAides",
   },
   {
@@ -399,16 +411,16 @@ export const QUIZ = [
   },
 ];
 
-// Conquêtes sociales obtenues par des gouvernements de gauche.
+// Conquêtes sociales portées par la gauche (au pouvoir, ou en négociant depuis l'opposition).
 export const HISTOIRE = [
   { annee: "1936", titre: "Congés payés et semaine de 40 heures", texte: "Le Front populaire instaure deux semaines de congés payés." },
   { annee: "1945", titre: "Sécurité sociale", texte: "Issue du programme du Conseil national de la Résistance, généralisée notamment par le ministre communiste Ambroise Croizat." },
   { annee: "1981", titre: "Abolition de la peine de mort", texte: "Portée par Robert Badinter." },
   { annee: "1982", titre: "Retraite à 60 ans, 39 heures, 5e semaine", texte: "Sous le gouvernement Mauroy." },
   { annee: "1988", titre: "Revenu minimum d'insertion", texte: "Le RMI, ancêtre du RSA, créé sous Michel Rocard." },
-  { annee: "1999", titre: "CMU et PACS", texte: "La couverture maladie universelle ouvre l'accès aux soins à tous." },
+  { annee: "1999", titre: "CMU et PACS", texte: "La couverture maladie universelle ouvre l'accès aux soins à tous, et le PACS offre un cadre légal aux couples, y compris de même sexe." },
   { annee: "2013", titre: "Mariage pour tous", texte: "L'égalité des droits pour les couples de même sexe." },
-  { annee: "2025", titre: "Suspension de la réforme des retraites", texte: "Négociée par les socialistes dans le budget de la Sécurité sociale pour 2026." },
+  { annee: "2025", titre: "Suspension de la réforme des retraites", texte: "Négociée par les socialistes dans le budget de la Sécurité sociale pour 2026, avec un gouvernement qui n'est pas de gauche.", source: "viePubliqueRetraites" },
 ];
 
 // Méthode de conversation fondée sur la recherche.

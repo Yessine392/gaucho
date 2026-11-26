@@ -1,7 +1,7 @@
 // Vérifie que chaque contenu publié renvoie à une source existante.
 // Lancer : node tests/data.test.mjs
 import assert from "node:assert/strict";
-import { SOURCES, SUJETS, OBJECTIONS, QUIZ } from "../data.js";
+import { SOURCES, SUJETS, OBJECTIONS, QUIZ, HISTOIRE } from "../data.js";
 
 const ids = new Set(Object.keys(SOURCES));
 const verifier = (id, ou) => assert.ok(ids.has(id), `Source inconnue « ${id} » dans ${ou}`);
@@ -33,9 +33,11 @@ for (const o of OBJECTIONS) {
 
 for (const q of QUIZ) { verifier(q.source, `quiz « ${q.affirmation.slice(0, 30)}… »`); assert.equal(typeof q.reponse, "boolean"); n++; }
 
+for (const h of HISTOIRE) { if (h.source) verifier(h.source, `histoire ${h.annee}`); }
+
 const utilisees = new Set([
   ...SUJETS.flatMap((s) => [...s.chiffres.map((c) => c.source), ...s.constatSources, ...s.propositionsSource, s.nuanceSource]),
-  ...OBJECTIONS.flatMap((o) => o.sources), ...QUIZ.map((q) => q.source),
+  ...OBJECTIONS.flatMap((o) => o.sources), ...QUIZ.map((q) => q.source), ...HISTOIRE.map((h) => h.source).filter(Boolean),
 ]);
 const orphelines = [...ids].filter((id) => !utilisees.has(id) && !["kalla2020", "broockman2016"].includes(id));
 assert.deepEqual(orphelines, [], `Sources jamais citées : ${orphelines.join(", ")}`);

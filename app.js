@@ -317,7 +317,7 @@ function viewQuiz() {
         <p class="lead" style="margin:0 auto">${score === QUIZ.length ? "Sans faute ! Tu es prêt·e pour la discussion." : "Les idées reçues ont la vie dure. Ces chiffres sont de bons points de départ pour en parler."}</p>
         <div class="btn-row" style="justify-content:center">
           <button class="btn btn-primary" type="button" id="restart">Recommencer</button>
-          <button class="btn btn-ghost" type="button" data-share-quiz="${score}">${icon("share", 18)} Défier un proche</button>
+          <button class="btn btn-ghost" type="button" data-share-quiz="${score}">${icon("share", 18)} Vérifier ensemble</button>
         </div>
       </div>
     </section>`;
@@ -368,10 +368,10 @@ function viewHistoire() {
     <div class="page-head">
       <span class="eyebrow">Mémoire</span>
       <h1>Ce que la gauche <span class="grad-text">a changé</span></h1>
-      <p class="lead">Quand on dit « voter ne sert à rien », ces dates répondent. Beaucoup de droits qu'on croit naturels ont été conquis par des majorités de gauche.</p>
+      <p class="lead">Quand on dit « voter ne sert à rien », ces dates répondent. Beaucoup de droits qu'on croit naturels ont été conquis par des majorités de gauche, et certains s'arrachent encore depuis l'opposition.</p>
     </div>
     <div class="timeline stagger">
-      ${HISTOIRE.map((h) => `<div class="card event"><span class="year">${esc(h.annee)}</span><h3>${esc(h.titre)}</h3><p>${esc(h.texte)}</p></div>`).join("")}
+      ${HISTOIRE.map((h) => `<div class="card event"><span class="year">${esc(h.annee)}</span><h3>${esc(h.titre)}</h3><p>${esc(h.texte)}</p>${h.source ? `<div class="sources-inline">${srcLink(h.source)}</div>` : ""}</div>`).join("")}
     </div>
   </section>`;
 }
@@ -422,7 +422,7 @@ function bindPartage() {
     partager(ids.map((id) => texteSujet(SUJETS.find((s) => s.id === id))).join("\n\n"));
   }));
   app.querySelectorAll("[data-share-quiz]").forEach((b) => b.addEventListener("click", () => {
-    partager(`J'ai eu ${b.dataset.shareQuiz}/${QUIZ.length} au vrai ou faux sur la pauvreté, les impôts et les services publics. Tu fais mieux ?`);
+    partager(`J'ai eu ${b.dataset.shareQuiz}/${QUIZ.length} au vrai ou faux sur la pauvreté, les impôts et les services publics, chaque réponse avec sa source. On le fait ensemble ?`);
   }));
 }
 
