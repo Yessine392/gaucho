@@ -644,6 +644,13 @@ async function partagerImage(id) {
       return;
     }
   } catch (e) { if (e && e.name === "AbortError") return; }
+  // Dans la visionneuse claude.ai, l'enregistrement passe par la capacité « downloads ».
+  const dl = window.claude && window.claude.use ? await window.claude.use("downloads").catch(() => null) : null;
+  if (dl) {
+    try { await dl.save({ filename: fichier.name, data: blob }); toast("Image enregistrée."); }
+    catch (e) { if (!e || e.code !== "declined") toast("Impossible d'enregistrer l'image ici."); }
+    return;
+  }
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob); a.download = fichier.name;
   document.body.appendChild(a); a.click(); a.remove();
