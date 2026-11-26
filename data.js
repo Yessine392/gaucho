@@ -168,6 +168,114 @@ export const SOURCES = {
     date: "juin 2024",
     url: "https://www.humanite.fr/social-et-economie/dissolution/isf-smic-a-1-600-euros-net-ce-quil-faut-retenir-du-programme-economique-du-nouveau-front-populaire",
   },
+  infoGouvPresidentielle: {
+    titre: "Élection présidentielle 2027 : dates, calendrier et démarches",
+    editeur: "info.gouv.fr, site du Gouvernement",
+    date: "novembre 2026",
+    url: "https://www.info.gouv.fr/actualite/election-presidentielle-2027",
+  },
+  inseeMalInscrits: {
+    titre: "Listes électorales : 16,5 % des électeurs mal inscrits en 2022 (d'après l'Insee)",
+    editeur: "Vie publique",
+    date: "2024",
+    url: "https://www.vie-publique.fr/en-bref/293290-listes-electorales-165-des-electeurs-mal-inscrits-en-2022",
+  },
+  publicSenatGauche2027: {
+    titre: "Élection présidentielle : qui sont les candidats à gauche ?",
+    editeur: "Public Sénat",
+    date: "2026",
+    url: "https://www.publicsenat.fr/actualites/politique/election-presidentielle-qui-sont-les-candidats-a-gauche",
+  },
+  ssmsiChiffres2026: {
+    titre: "Chiffres clés Insécurité et délinquance, édition 2026",
+    editeur: "SSMSI, ministère de l'Intérieur",
+    date: "novembre 2026",
+    url: "https://statistiques.interieur.gouv.fr/ssmsi/publications/chiffres-cles-insecurite-et-delinquance-edition-2026",
+  },
+  ssmsiVRS: {
+    titre: "Vécu et ressenti en matière de sécurité : victimation, délinquance et sentiment d'insécurité",
+    editeur: "SSMSI, ministère de l'Intérieur",
+    date: "octobre 2026",
+    url: "https://statistiques.interieur.gouv.fr/ssmsi/publications/vecu-et-ressenti-en-matiere-de-securite-victimation-delinquance-et-sentiment-0",
+  },
+  deppPisa2025: {
+    titre: "PISA 2025 : les acquis des élèves de 15 ans en baisse en France et dans l'OCDE (Note d'information n° 26.40)",
+    editeur: "DEPP, ministère de l'Éducation nationale",
+    date: "septembre 2026",
+    url: "https://www.education.gouv.fr/depp/pisa-2025-les-acquis-des-eleves-de-15-ans-en-comprehension-de-l-ecrit-et-en-culture-mathematique-en-505645",
+  },
+  hcspNiveauScolaire: {
+    titre: "Niveau scolaire : éléments de diagnostic et propositions",
+    editeur: "Haut-commissariat à la Stratégie et au Plan",
+    date: "août 2026",
+    url: "https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-08-31%20-%20Rapport%20Niveau%20scolaire/HCSP-2026-RAPPORT-Niveau-scolaire.pdf",
+  },
+  inseeChomageT3: {
+    titre: "Au troisième trimestre 2026, le taux de chômage s'établit à 8,2 %",
+    editeur: "Insee, Informations rapides n° 270",
+    date: "novembre 2026",
+    url: "https://www.insee.fr/fr/statistiques/9118603",
+  },
+  inseeChomageT2: {
+    titre: "Au deuxième trimestre 2026, le taux de chômage augmente de 0,2 point et atteint 8,3 %",
+    editeur: "Insee, Informations rapides n° 192",
+    date: "août 2026",
+    url: "https://www.insee.fr/fr/statistiques/9032359",
+  },
+  inseeEmploi: {
+    titre: "Emploi, chômage, travail : l'essentiel",
+    editeur: "Insee",
+    date: "octobre 2026",
+    url: "https://www.insee.fr/fr/statistiques/8996926",
+  },
+  fraudeMinistere: {
+    titre: "Fraudes fiscales et sociales : plus de 20 milliards d'euros détectés et redressés en 2025",
+    editeur: "Ministère de l'Économie (fraude sociale estimée par le HCFiPS)",
+    date: "avril 2026",
+    url: "https://presse.economie.gouv.fr/?p=174412",
+  },
+  fraudeTF1: {
+    titre: "Entre la fraude fiscale et la fraude sociale, qu'est-ce qui coûte le plus à l'État ?",
+    editeur: "TF1 Info, d'après le HCFiPS et la Cour des comptes",
+    date: "juillet 2026",
+    url: "https://www.tf1info.fr/economie/verif-entre-la-fraude-fiscale-et-la-fraude-sociale-qu-est-ce-qui-coute-le-plus-a-l-etat-2453310.html",
+  },
+  caeHeritage: {
+    titre: "Repenser l'héritage (note n° 69)",
+    editeur: "Conseil d'analyse économique",
+    date: "décembre 2021",
+    url: "https://cae-eco.fr/repenser-lheritage",
+  },
+  ccomptesSuccessions: {
+    titre: "Les droits de succession, communication à la commission des finances de l'Assemblée nationale",
+    editeur: "Cour des comptes",
+    date: "septembre 2024",
+    url: "https://www.vie-publique.fr/files/rapport/pdf/295513.pdf",
+  },
+  inseeDepensesUE: {
+    titre: "Dépenses des administrations publiques dans l'Union européenne",
+    editeur: "Insee, d'après Eurostat",
+    date: "juillet 2026",
+    url: "https://www.insee.fr/fr/statistiques/2381406",
+  },
+  fipecoDepenses: {
+    titre: "La définition, le niveau et la répartition des dépenses publiques",
+    editeur: "FIPECO (François Ecalle, ancien de la Cour des comptes)",
+    date: "mai 2026",
+    url: "https://www.fipeco.fr/fiche/La-d%C3%A9finition,-le-niveau-et-la-r%C3%A9partition-des-d%C3%A9penses-publiques",
+  },
+  pons2018: {
+    titre: "Will a Five-Minute Discussion Change Your Mind? A Countrywide Experiment on Voter Choice in France",
+    editeur: "Vincent Pons, American Economic Review",
+    date: "2018",
+    url: "https://www.aeaweb.org/articles?id=10.1257/aer.20160524",
+  },
+  braconnier2017: {
+    titre: "Voter Registration Costs and Disenfranchisement: Experimental Evidence from France",
+    editeur: "Braconnier, Dormagen & Pons, American Political Science Review",
+    date: "2017",
+    url: "https://www.cambridge.org/core/journals/american-political-science-review/article/abs/voter-registration-costs-and-disenfranchisement-experimental-evidence-from-france/CAA4ADFFA50811B3CFAA68F1D809CAB9",
+  },
   kalla2020: {
     titre: "Reducing Exclusionary Attitudes through Interpersonal Conversation",
     editeur: "Kalla & Broockman, American Political Science Review",
@@ -316,6 +424,72 @@ export const SUJETS = [
     nuance: "Revenir à 60 ans coûte cher : de 27 milliards d'euros par an (chiffrage repris par ses promoteurs) à 53 Md€ (gouvernement), et jusqu'à 58 Md€ avec les mesures d'accompagnement selon l'Institut Montaigne, un think tank libéral (chiffrages de 2024). La gauche doit montrer d'où viendront ces recettes, c'est la question qui reviendra.",
     nuanceSource: "montaigneRetraites",
   },
+  {
+    id: "securite",
+    emoji: "🛡️",
+    titre: "Sécurité",
+    accroche: "Se sentir tranquille chez soi, dans la rue, dans le bus.",
+    couleur: "#0ea5e9",
+    question: "Est-ce que tu te sens en sécurité dans ton quartier ou dans les transports ?",
+    chiffres: [
+      { valeur: 472400, unite: "", decimales: 0, label: "victimes de violences physiques enregistrées en 2025, 5 % de plus en un an", source: "ssmsiChiffres2026" },
+      { valeur: 132100, unite: "", decimales: 0, label: "victimes de violences sexuelles enregistrées en 2025 (+8 %)", source: "ssmsiChiffres2026" },
+    ],
+    constat: "Les violences enregistrées par la police et la gendarmerie augmentent chaque année depuis 2016. Dans l'enquête de victimation, les habitants des grandes villes se disent plus souvent inquiets dans leur quartier et dans les transports, et à peine plus d'un sur deux est satisfait de l'action de proximité des forces de l'ordre.",
+    constatSources: ["ssmsiChiffres2026", "ssmsiVRS"],
+    propositions: [
+      "Rétablir la police de proximité et maintenir toutes les gendarmeries.",
+      "Plus d'enquêteurs : police judiciaire, police scientifique, unités contre le narcotrafic, la délinquance financière et les réseaux mafieux.",
+      "Donner des moyens à la justice (magistrats, greffiers, protection judiciaire de la jeunesse) pour juger dans un délai raisonnable.",
+    ],
+    propositionsSource: ["programmeNFP"],
+    nuance: "Ces chiffres comptent les faits enregistrés : une hausse peut aussi traduire des victimes qui portent davantage plainte, notamment pour les violences sexuelles. Sur ce sujet, mieux vaut parler de moyens concrets (enquêteurs, justice plus rapide) que d'opposer prévention et répression.",
+    nuanceSource: "ssmsiChiffres2026",
+  },
+  {
+    id: "ecole",
+    emoji: "🎒",
+    titre: "École",
+    accroche: "Que chaque enfant ait sa chance, quel que soit son quartier.",
+    couleur: "#eab308",
+    question: "Comment ça se passe à l'école pour tes enfants, ou pour ceux de ton entourage ?",
+    chiffres: [
+      { valeur: 95, unite: " points", decimales: 0, label: "d'écart en maths à 15 ans entre élèves très favorisés et très défavorisés, contre 83 en moyenne dans l'OCDE (PISA 2025)", source: "deppPisa2025" },
+      { valeur: 4, unite: "", decimales: 0, label: "pays de l'OCDE seulement où l'origine sociale pèse plus qu'en France sur les résultats en maths (PISA 2022)", source: "hcspNiveauScolaire" },
+    ],
+    constat: "Les résultats des élèves de 15 ans baissent en France comme dans l'OCDE. Mais la France reste l'un des pays où le milieu social des parents pèse le plus sur la réussite, en lecture comme en maths.",
+    constatSources: ["deppPisa2025", "hcspNiveauScolaire"],
+    propositions: [
+      "Aller vers la gratuité intégrale de l'école : cantine, fournitures, transports, activités périscolaires.",
+      "Réduire les effectifs pour passer sous la moyenne européenne de 19 élèves par classe.",
+      "Moduler les dotations des établissements, y compris privés, selon leur respect d'objectifs de mixité sociale.",
+    ],
+    propositionsSource: ["programmeNFP"],
+    nuance: "La baisse du niveau touche presque toute l'OCDE, et l'écart entre bons et moins bons élèves n'est pas plus grand en France qu'ailleurs : c'est le poids de l'origine sociale qui fait exception. Réduire la taille des classes a déjà commencé en éducation prioritaire, et l'effort coûte cher.",
+    nuanceSource: "hcspNiveauScolaire",
+  },
+  {
+    id: "travail",
+    emoji: "🔧",
+    titre: "Travail",
+    accroche: "Un emploi stable, qui paie et qui ne casse pas le corps.",
+    couleur: "#f97316",
+    question: "Dans ton travail, qu'est-ce qui a changé ces dernières années ?",
+    chiffres: [
+      { valeur: 8.2, unite: " %", decimales: 1, label: "de chômage au 3e trimestre 2026, 0,4 point de plus en un an", source: "inseeChomageT3" },
+      { valeur: 150000, unite: "", decimales: 0, label: "chômeurs de plus en un an, pour 2,6 millions au total", source: "inseeChomageT3" },
+    ],
+    constat: "Après des années de baisse, le chômage remonte depuis 2025. Au 2e trimestre 2026, il a atteint son plus haut niveau depuis 2019, en dehors de la crise sanitaire.",
+    constatSources: ["inseeChomageT2", "inseeChomageT3"],
+    propositions: [
+      "Abroger les réformes de l'assurance chômage.",
+      "Abroger les lois travail et rétablir le « principe de faveur » : un accord d'entreprise ne peut pas être moins favorable que la loi.",
+      "Reconnaître comme salariés les travailleurs des plateformes et faire respecter l'égalité salariale entre femmes et hommes.",
+    ],
+    propositionsSource: ["programmeNFP", "ofceNFP"],
+    nuance: "Le chômage reste bien en dessous de son pic de 2015, et le sous-emploi (temps partiel subi) est à son plus bas depuis vingt ans. Le reconnaître rend le reste plus crédible.",
+    nuanceSource: "inseeEmploi",
+  },
 ];
 
 // Objections courantes, avec ce qu'elles ont de vrai.
@@ -368,6 +542,27 @@ export const OBJECTIONS = [
     vrai: "Le RN a voté contre la réforme des retraites et parle beaucoup de pouvoir d'achat.",
     reponse: "Sur la taxe Zucman, le RN s'est abstenu à l'Assemblée en février 2025, puis a voté contre en octobre 2025. Le 16 octobre 2026, ses 37 députés présents ont encore voté contre (rejet par 70 voix contre 35). Comparer les votes concrets, pas les discours : c'est la gauche qui a voté pour faire contribuer les très hauts patrimoines.",
     sources: ["nosParlementairesZucman", "scrutinZucman2026"],
+  },
+  {
+    id: "fraude",
+    objection: "Avant de parler d'impôts, il faut arrêter la fraude aux aides sociales.",
+    vrai: "La fraude sociale existe : environ 14 milliards d'euros par an selon le Haut Conseil du financement de la protection sociale, fraude non découverte comprise.",
+    reponse: "Plus de la moitié (52 %) vient de cotisations non payées, surtout du travail dissimulé par des employeurs ; 36 % vient des allocataires et 12 % de professionnels de santé. La fraude fiscale, elle, n'a même pas d'estimation officielle d'ensemble, et la Cour des comptes la juge « mal connue ». Lutter contre toutes les fraudes, oui : la gauche proposait aussi des recrutements contre la fraude fiscale et douanière.",
+    sources: ["fraudeMinistere", "fraudeTF1", "ofceNFP"],
+  },
+  {
+    id: "heritage",
+    objection: "Taxer l'héritage, c'est taxer deux fois le travail d'une vie.",
+    vrai: "L'héritage touche à l'intime, et la France est déjà le pays de l'OCDE où ces droits pèsent le plus dans le PIB (0,74 %).",
+    reponse: "Chaque enfant peut recevoir 100 000 € de chacun de ses parents sans rien payer. La moitié des Français héritera de moins de 70 000 € dans sa vie, et la part du patrimoine hérité est passée de 35 % à 60 % depuis les années 1970. Ce sont surtout les très grandes transmissions qui profitent des exonérations (assurance-vie, pacte Dutreil) : c'est là que se joue la justice, pas sur la maison familiale.",
+    sources: ["caeHeritage", "ccomptesSuccessions"],
+  },
+  {
+    id: "depenses",
+    objection: "Il suffit de couper dans les dépenses publiques.",
+    vrai: "Les dépenses publiques sont très élevées : 57,2 % du PIB en 2025, au deuxième rang de l'Union européenne (49,5 % en moyenne).",
+    reponse: "Environ la moitié de l'écart avec la moyenne européenne vient des prestations sociales, surtout les retraites et la santé (25,7 % du PIB contre 21,9 %). Couper, c'est donc choisir : les pensions, l'hôpital ou l'école ? Demander : « Tu couperais où, concrètement ? » La gauche préfère faire contribuer davantage les plus hauts patrimoines.",
+    sources: ["inseeDepensesUE", "fipecoDepenses"],
   },
 ];
 
@@ -423,6 +618,84 @@ export const HISTOIRE = [
   { annee: "2025", titre: "Suspension de la réforme des retraites", texte: "Négociée par les socialistes dans le budget de la Sécurité sociale pour 2026, avec un gouvernement qui n'est pas de gauche.", source: "viePubliqueRetraites" },
 ];
 
+// Propositions : programme commun du NFP (2024). Pour 2027, la gauche part divisée.
+export const CADRE_PROPOSITIONS = {
+  titre: "Ce que proposait le NFP (2024)",
+  note: "Ces mesures viennent du programme commun de la gauche de 2024. Pour 2027, la gauche part avec plusieurs candidatures : compare les programmes de chacune.",
+  source: "publicSenatGauche2027",
+};
+
+// Aller voter : dates officielles et démarches.
+export const VOTE = {
+  premierTour: "dimanche 18 avril 2027",
+  secondTour: "dimanche 2 mai 2027",
+  limiteInscription: "vendredi 12 mars 2027",
+  exception: "Dans certains cas (18 ans, déménagement pour le travail, nationalité récente), l'inscription reste possible jusqu'au 8 avril 2027.",
+  sources: ["infoGouvPresidentielle"],
+  recherche: "Faire voter quelqu'un qui partage déjà tes idées compte autant que convaincre. En France, en 2022, 16,5 % des électeurs étaient mal inscrits, souvent après un déménagement, et ils votent beaucoup moins. Une expérience menée en France a montré que de simples visites pour aider à s'inscrire augmentent nettement l'inscription, puis le vote.",
+  rechercheSources: ["inseeMalInscrits", "braconnier2017"],
+  liens: [
+    { titre: "Vérifier mon inscription et mon bureau de vote", url: "https://www.elections.interieur.gouv.fr/mes-demarches/je-verifie-ma-situation-electorale" },
+    { titre: "M'inscrire sur les listes électorales", url: "https://www.elections.interieur.gouv.fr/mes-demarches/je-minscris-sur-listes-electorales" },
+    { titre: "Faire une procuration (Maprocuration)", url: "https://www.maprocuration.gouv.fr/" },
+  ],
+  plan: [
+    { q: "Quel jour et à quelle heure tu y vas ?", aide: "Le matin avant les courses, après le déjeuner… Un moment précis, c'est plus facile à tenir." },
+    { q: "Comment tu t'y rends, et avec qui ?", aide: "À pied, en voiture, avec un ami ou la famille : y aller à plusieurs aide à ne pas oublier." },
+    { q: "Qu'est-ce qui pourrait t'en empêcher ?", aide: "Travail, vacances, garde d'enfant : si c'est le cas, une procuration se fait en quelques minutes." },
+  ],
+};
+
+// Portes d'entrée selon la personne. Rien n'est enregistré sur elle.
+export const PROFILS = [
+  {
+    id: "abstention",
+    emoji: "🤷",
+    titre: "Ne vote plus",
+    portrait: "« À quoi bon, ils sont tous pareils. »",
+    entree: "Ne pas parler de partis. Partir d'un problème concret qui l'agace, puis montrer qu'un vote a déjà changé ce genre de problème. Et vérifier ensemble l'inscription.",
+    question: "Qu'est-ce qui, concrètement, te fait penser que voter ne change rien ?",
+    sujets: ["pouvoir-achat", "logement"],
+    objections: ["tous-pareils"],
+  },
+  {
+    id: "rn",
+    emoji: "😤",
+    titre: "Tenté·e par le RN",
+    portrait: "« Au moins eux, ils parlent des gens comme moi. »",
+    entree: "Ne pas faire la morale. Reconnaître la colère, parler salaires et services publics, puis comparer les votes concrets plutôt que les discours.",
+    question: "Qu'est-ce qui t'a donné envie de les écouter ?",
+    sujets: ["pouvoir-achat", "securite"],
+    objections: ["rn-social", "immigration", "fraude"],
+  },
+  {
+    id: "centre",
+    emoji: "🧭",
+    titre: "Plutôt au centre",
+    portrait: "« La gauche, c'est sympa, mais pas sérieux sur l'argent. »",
+    entree: "Commencer par la crédibilité : reconnaître la dette, montrer les chiffrages et leurs limites, puis parler de justice fiscale.",
+    question: "Pour toi, c'est quoi un budget juste ?",
+    sujets: ["justice-fiscale", "sante"],
+    objections: ["dette", "depenses", "impots"],
+  },
+  {
+    id: "jeune",
+    emoji: "🎧",
+    titre: "Jeune qui ne vote pas",
+    portrait: "« La politique, ça ne me concerne pas. »",
+    entree: "Parler de son quotidien (loyer, études, climat, premier boulot) et l'aider à s'inscrire : c'est souvent là que tout bloque.",
+    question: "Qu'est-ce qui te prend le plus la tête en ce moment ?",
+    sujets: ["logement", "climat", "travail"],
+    objections: ["tous-pareils"],
+  },
+];
+
+// Ce que dit la recherche sur les conversations politiques.
+export const RECHERCHE_DIALOGUE = {
+  texte: "Des expériences de terrain, surtout aux États-Unis, montrent qu'une conversation sans jugement, où l'on échange des histoires personnelles, peut faire évoluer des opinions de façon modeste mais durable, alors que les arguments seuls ont souvent peu d'effet. Ces études portent surtout sur des attitudes (envers les immigrés, les personnes trans), pas directement sur le vote. En France, le porte-à-porte de 2012 n'a pas changé la participation, mais a eu un effet modeste et réel sur le vote.",
+  sources: ["kalla2020", "broockman2016", "pons2018"],
+};
+
 // Méthode de conversation fondée sur la recherche.
 export const ETAPES = [
   {
@@ -454,7 +727,7 @@ export const ETAPES = [
 
 export const A_EVITER = [
   "Se moquer ou traiter l'autre d'ignorant : ça ferme la porte.",
-  "Assener une avalanche de chiffres : la recherche montre que les arguments seuls changent peu les avis.",
+  "Assener une avalanche de chiffres : les arguments seuls changent souvent peu les avis.",
   "Inventer ou arrondir un chiffre à son avantage : un seul faux chiffre ruine tout le reste.",
   "Vouloir gagner la discussion : l'objectif est qu'elle ou il y repense après.",
 ];

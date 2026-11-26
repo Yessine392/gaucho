@@ -1,7 +1,7 @@
 // Vérifie que chaque contenu publié renvoie à une source existante.
 // Lancer : node tests/data.test.mjs
 import assert from "node:assert/strict";
-import { SOURCES, SUJETS, OBJECTIONS, QUIZ, HISTOIRE } from "../data.js";
+import { SOURCES, SUJETS, OBJECTIONS, QUIZ, HISTOIRE, PROFILS, VOTE, CADRE_PROPOSITIONS, RECHERCHE_DIALOGUE } from "../data.js";
 
 const ids = new Set(Object.keys(SOURCES));
 const verifier = (id, ou) => assert.ok(ids.has(id), `Source inconnue « ${id} » dans ${ou}`);
@@ -35,11 +35,25 @@ for (const q of QUIZ) { verifier(q.source, `quiz « ${q.affirmation.slice(0, 30)
 
 for (const h of HISTOIRE) { if (h.source) verifier(h.source, `histoire ${h.annee}`); }
 
+const sujetIds = new Set(SUJETS.map((s) => s.id));
+const objIds = new Set(OBJECTIONS.map((o) => o.id));
+assert.equal(sujetIds.size, SUJETS.length, "id de sujet en double");
+assert.equal(objIds.size, OBJECTIONS.length, "id d'objection en double");
+for (const p of PROFILS) {
+  p.sujets.forEach((id) => assert.ok(sujetIds.has(id), `profil ${p.id} : sujet inconnu ${id}`));
+  p.objections.forEach((id) => assert.ok(objIds.has(id), `profil ${p.id} : objection inconnue ${id}`));
+  assert.ok(p.sujets.length <= 3, `profil ${p.id} : 3 sujets maximum`);
+  n++;
+}
+const autres = [...VOTE.sources, ...VOTE.rechercheSources, CADRE_PROPOSITIONS.source, ...RECHERCHE_DIALOGUE.sources];
+autres.forEach((x) => verifier(x, "pages Voter, Dialogue ou propositions"));
+VOTE.liens.forEach((l) => assert.match(l.url, /^https:\/\//));
+
 const utilisees = new Set([
   ...SUJETS.flatMap((s) => [...s.chiffres.map((c) => c.source), ...s.constatSources, ...s.propositionsSource, s.nuanceSource]),
-  ...OBJECTIONS.flatMap((o) => o.sources), ...QUIZ.map((q) => q.source), ...HISTOIRE.map((h) => h.source).filter(Boolean),
+  ...OBJECTIONS.flatMap((o) => o.sources), ...QUIZ.map((q) => q.source), ...HISTOIRE.map((h) => h.source).filter(Boolean), ...autres,
 ]);
-const orphelines = [...ids].filter((id) => !utilisees.has(id) && !["kalla2020", "broockman2016"].includes(id));
+const orphelines = [...ids].filter((id) => !utilisees.has(id));
 assert.deepEqual(orphelines, [], `Sources jamais citées : ${orphelines.join(", ")}`);
 
 console.log(`OK : ${n} contenus vérifiés, ${ids.size} sources.`);
