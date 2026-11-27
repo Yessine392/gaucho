@@ -6,6 +6,72 @@
 export const MAJ = "26 novembre 2026";
 
 export const SOURCES = {
+  inseePauvreteAge: {
+    titre: "Pauvreté selon l'âge et le seuil, données annuelles de 1996 à 2024",
+    editeur: "Insee",
+    date: "juillet 2026",
+    url: "https://www.insee.fr/fr/statistiques/3565548",
+  },
+  inseeNonSalaries2114: {
+    titre: "Les revenus d'activité des non-salariés en 2024",
+    editeur: "Insee Première n° 2114",
+    date: "juin 2026",
+    url: "https://www.insee.fr/fr/statistiques/fichier/version-html/9013403/IP2114.pdf",
+  },
+  inseeRetraitesNonSalaries: {
+    titre: "Pensions de retraite des non-salariés (Insee Références)",
+    editeur: "Insee",
+    date: "mai 2025",
+    url: "https://www.insee.fr/fr/statistiques/8376559",
+  },
+  anFrontPopulaire: {
+    titre: "Il y a 90 ans, le Front populaire et les lois sociales de la République",
+    editeur: "Assemblée nationale",
+    date: "2026",
+    url: "https://www.assemblee-nationale.fr/dyn/histoire/il-y-a-90-ans-le-front-populaire-et-les-lois-sociales-de-la-republique/des-accords-de-matignon-aux-cinq-premieres-lois-adoptees",
+  },
+  secu80ans: {
+    titre: "Pilier de la solidarité nationale, la Sécurité sociale célèbre ses 80 ans",
+    editeur: "Ministère du Travail et des Solidarités",
+    date: "octobre 2025",
+    url: "https://solidarites.gouv.fr/pilier-de-la-solidarite-nationale-la-securite-sociale-celebre-ses-80-ans",
+  },
+  viePubliqueAbolition: {
+    titre: "Abolition de la peine de mort en France : chronologie",
+    editeur: "Vie publique",
+    date: "mis à jour en 2025",
+    url: "https://www.vie-publique.fr/eclairage/19491-abolition-de-la-peine-de-mort-en-france-chronologie",
+  },
+  viePublique1982: {
+    titre: "Conseil des ministres du 25 mars 1982 : ordonnances (retraite à 60 ans)",
+    editeur: "Vie publique",
+    date: "mars 1982",
+    url: "https://www.vie-publique.fr/discours/153889-conseil-des-ministres-25031982-ordonnances",
+  },
+  cnamCongesPayes: {
+    titre: "Les congés payés ont 90 ans",
+    editeur: "Cnam",
+    date: "juin 2026",
+    url: "https://www.cnam.fr/actualites/les-conges-payes-ont-90-ans",
+  },
+  viePubliqueRMI: {
+    titre: "Conseil des ministres du 13 décembre 1989 : bilan du revenu minimum d'insertion après un an",
+    editeur: "Vie publique",
+    date: "décembre 1989",
+    url: "https://www.vie-publique.fr/discours/154162-conseil-des-ministres-du-13-decembre-1989-bilan-du-revenu-minimum-dinse",
+  },
+  senatCMU: {
+    titre: "Contrôle de l'application de la loi portant création d'une couverture maladie universelle",
+    editeur: "Sénat",
+    date: "loi du 27 juillet 1999",
+    url: "https://www.senat.fr/application-des-lois/pjl98-338.html",
+  },
+  viePubliqueCouple: {
+    titre: "Du mariage au mariage pour tous : les évolutions conjugales",
+    editeur: "Vie publique",
+    date: "mis à jour en 2025",
+    url: "https://www.vie-publique.fr/eclairage/20153-du-mariage-au-mariage-pour-tous-les-evolutions-conjugales",
+  },
   inseePauvrete: {
     titre: "Niveau de vie et pauvreté en 2023",
     editeur: "Insee Première n° 2063",
@@ -300,8 +366,8 @@ export const SUJETS = [
     couleur: "#ff4d6d",
     question: "Qu'est-ce qui pèse le plus dans ton budget en ce moment ?",
     chiffres: [
-      { valeur: 15.4, unite: "%", decimales: 1, label: "de la population sous le seuil de pauvreté en 2024, comme en 2023 : le niveau le plus haut depuis 1996", source: "inseePauvrete2117" },
-      { valeur: 9.8, unite: " M", decimales: 1, label: "de personnes pauvres en 2024, après un bond de 650 000 en 2023", source: "inseePauvrete2117" },
+      { valeur: 15.4, unite: "%", decimales: 1, label: "de la population sous le seuil de pauvreté en 2024, comme en 2023 : le niveau le plus haut depuis 1996", source: "inseePauvrete2117", annee: 2024, definition: "Part des personnes dont le niveau de vie est inférieur à 60 % du niveau de vie médian : c'est un seuil relatif, qui mesure l'écart avec le reste de la population. Champ : France métropolitaine." },
+      { valeur: 9.8, unite: " M", decimales: 1, label: "de personnes pauvres en 2024, après un bond de 650 000 en 2023", source: "inseePauvrete2117", annee: 2024, definition: "Nombre de personnes sous ce même seuil de 60 % du niveau de vie médian, en France métropolitaine." },
     ],
     constat: "La pauvreté a bondi en 2023 et ne recule pas en 2024. Surtout, les inégalités de niveau de vie atteignent en 2024 leur niveau le plus élevé depuis trente ans (indice de Gini de 0,302), portées par les revenus du patrimoine des plus aisés.",
     constatSources: ["inseePauvrete2117", "inseePauvrete"],
@@ -322,8 +388,8 @@ export const SUJETS = [
     couleur: "#f59e0b",
     question: "Tu trouves que l'effort est bien réparti entre tout le monde ?",
     chiffres: [
-      { valeur: 26, unite: " %", decimales: 0, label: "de taux d'imposition global pour les milliardaires, contre 46 % pour les 0,1 % les plus riches (données 2016)", source: "ippMilliardaires" },
-      { valeur: 1228, unite: " Md€", decimales: 0, label: "de patrimoine cumulé pour les 500 plus grandes fortunes en 2024, contre 124 Md€ en 2003", source: "anRapportZucman" },
+      { valeur: 26, unite: " %", decimales: 0, label: "de taux d'imposition global pour les milliardaires, contre 46 % pour les 0,1 % les plus riches (données 2016)", source: "ippMilliardaires", annee: 2016, definition: "Tous les impôts payés par le foyer et par les sociétés qu'il contrôle, rapportés à son revenu économique. Estimation de l'Institut des politiques publiques." },
+      { valeur: 1228, unite: " Md€", decimales: 0, label: "de patrimoine cumulé pour les 500 plus grandes fortunes en 2024, contre 124 Md€ en 2003", source: "anRapportZucman", annee: 2024, definition: "Patrimoine cumulé des 500 premières fortunes professionnelles, tel que repris dans le rapport parlementaire. Ce sont des estimations, pas des déclarations fiscales." },
     ],
     constat: "L'impôt est progressif pour l'immense majorité des Français, puis devient régressif tout en haut : les plus grandes fortunes laissent leurs revenus dans des sociétés et paient surtout l'impôt sur les sociétés. Côté État, les aides publiques aux entreprises atteignent jusqu'à 211 milliards d'euros en 2023 au sens le plus large (108 Md€ au sens strict), sans évaluation d'ensemble.",
     constatSources: ["ippMilliardaires", "senatAides"],
@@ -344,8 +410,8 @@ export const SUJETS = [
     couleur: "#22c55e",
     question: "Est-ce que toi ou tes proches avez eu du mal à trouver un médecin ou une place à l'hôpital ?",
     chiffres: [
-      { valeur: 47700, unite: "", decimales: 0, label: "lits d'hospitalisation complète en moins entre fin 2013 et fin 2025 (−11,6 %)", source: "dreesLits" },
-      { valeur: 365100, unite: "", decimales: 0, label: "lits restants fin 2025", source: "dreesLits" },
+      { valeur: 47700, unite: "", decimales: 0, label: "lits d'hospitalisation complète en moins entre fin 2013 et fin 2025 (−11,6 %)", source: "dreesLits", annee: 2025, definition: "Lits avec nuitée réellement en état d'accueillir des patients au 31 décembre, dans le public et le privé. Les lits fermés faute de personnel ne sont pas comptés." },
+      { valeur: 365100, unite: "", decimales: 0, label: "lits restants fin 2025", source: "dreesLits", annee: 2025, definition: "Lits d'hospitalisation complète en état d'accueillir des patients au 31 décembre 2025, public et privé." },
     ],
     constat: "La baisse des lits se poursuit depuis plus de dix ans. La Drees ne compte que les lits réellement en état d'accueillir des patients : ceux fermés faute de personnel sont exclus du décompte.",
     constatSources: ["dreesLits"],
@@ -366,8 +432,8 @@ export const SUJETS = [
     couleur: "#3b82f6",
     question: "Ton loyer ou ton crédit, ça représente quelle part de ce que tu gagnes ?",
     chiffres: [
-      { valeur: 2.8, unite: " M", decimales: 1, label: "de ménages en attente d'un logement social en 2025, un record", source: "fondationLogement" },
-      { valeur: 350000, unite: "", decimales: 0, label: "personnes sans domicile selon la Fondation, sur un champ plus large que les 143 000 recensées par l'Insee en 2012", source: "fondationLogement" },
+      { valeur: 2.8, unite: " M", decimales: 1, label: "de ménages en attente d'un logement social en 2025, un record", source: "fondationLogement", annee: 2025, definition: "Ménages ayant une demande de logement social en cours, d'après les données publiques reprises par la Fondation." },
+      { valeur: 350000, unite: "", decimales: 0, label: "personnes sans domicile selon la Fondation, sur un champ plus large que les 143 000 recensées par l'Insee en 2012", source: "fondationLogement", annee: 2025, definition: "Estimation de la Fondation : elle inclut les personnes à la rue, en hébergement d'urgence ou en habitat de fortune. La dernière enquête Insee date de 2012." },
     ],
     constat: "Seule une demande de logement social sur dix a reçu une réponse favorable en 2024, contre une sur six en 2017. 4,2 millions de personnes sont mal logées, et les expulsions avec le concours de la force publique ont atteint un record en 2024.",
     constatSources: ["fondationLogement"],
@@ -388,8 +454,8 @@ export const SUJETS = [
     couleur: "#10b981",
     question: "Qu'est-ce qui te paraît injuste dans la façon dont on demande des efforts pour le climat ?",
     chiffres: [
-      { valeur: 2.7, unite: "×", decimales: 1, label: "plus d'émissions pour les 10 % de ménages les plus riches que pour les 10 % les plus pauvres", source: "ofceCarbone" },
-      { valeur: 3.9, unite: " M", decimales: 1, label: "de résidences principales sont des passoires énergétiques (DPE F ou G) au 1er janvier 2025", source: "onrePassoires" },
+      { valeur: 2.7, unite: "×", decimales: 1, label: "plus d'émissions pour les 10 % de ménages les plus riches que pour les 10 % les plus pauvres", source: "ofceCarbone", annee: 2011, definition: "Empreinte carbone moyenne par ménage, biens importés compris, du dixième le plus riche rapportée à celle du dixième le plus pauvre (étude OFCE publiée en 2020)." },
+      { valeur: 3.9, unite: " M", decimales: 1, label: "de résidences principales sont des passoires énergétiques (DPE F ou G) au 1er janvier 2025", source: "onrePassoires", annee: 2025, definition: "Résidences principales classées F ou G au diagnostic de performance énergétique (DPE)." },
     ],
     constat: "Un ménage parmi les 10 % les plus riches émet environ 40 tonnes de CO₂e par an, contre 15 tonnes pour les 10 % les plus pauvres. Côté logement, 13,8 % des logements loués dans le privé sont des passoires énergétiques, contre 5,8 % dans le logement social.",
     constatSources: ["ofceCarbone", "onrePassoires"],
@@ -410,8 +476,8 @@ export const SUJETS = [
     couleur: "#a855f7",
     question: "À quel âge tu te vois t'arrêter, vu ton métier ?",
     chiffres: [
-      { valeur: 62.75, unite: " ans", decimales: 2, label: "âge légal pour la génération 1964, après la suspension de la réforme jusqu'en 2028 (au lieu de 63 ans)", source: "viePubliqueRetraites", affichage: "62 ans 9 mois" },
-      { valeur: 1.8, unite: " Md€", decimales: 1, label: "par an : coût estimé de la suspension en année pleine", source: "senatRetraites" },
+      { valeur: 62.75, unite: " ans", decimales: 2, label: "âge légal pour la génération 1964, après la suspension de la réforme jusqu'en 2028 (au lieu de 63 ans)", source: "viePubliqueRetraites", affichage: "62 ans 9 mois", annee: 2026, definition: "Âge minimal de départ prévu pour les personnes nées en 1964, après la suspension de la réforme votée dans le budget de la Sécurité sociale pour 2026." },
+      { valeur: 1.8, unite: " Md€", decimales: 1, label: "par an : coût estimé de la suspension en année pleine", source: "senatRetraites", annee: 2026, definition: "Estimation du coût de la suspension pour les régimes de retraite, en année pleine." },
     ],
     constat: "La réforme de 2023 (64 ans) est suspendue jusqu'en 2028 par la loi de financement de la Sécurité sociale pour 2026, une mesure négociée par les socialistes avec le gouvernement Lecornu. Le 17 novembre 2026, la majorité de droite et du centre au Sénat a voté son rétablissement, en première lecture : le débat n'est pas clos.",
     constatSources: ["viePubliqueRetraites", "senatRetablitRetraites"],
@@ -432,8 +498,8 @@ export const SUJETS = [
     couleur: "#0ea5e9",
     question: "Est-ce que tu te sens en sécurité dans ton quartier ou dans les transports ?",
     chiffres: [
-      { valeur: 472400, unite: "", decimales: 0, label: "victimes de violences physiques enregistrées en 2025, 5 % de plus en un an", source: "ssmsiChiffres2026" },
-      { valeur: 132100, unite: "", decimales: 0, label: "victimes de violences sexuelles enregistrées en 2025 (+8 %)", source: "ssmsiChiffres2026" },
+      { valeur: 472400, unite: "", decimales: 0, label: "victimes de violences physiques enregistrées en 2025, 5 % de plus en un an", source: "ssmsiChiffres2026", annee: 2025, definition: "Victimes enregistrées par la police et la gendarmerie. Ce chiffre dépend aussi des plaintes déposées, pas seulement des faits commis." },
+      { valeur: 132100, unite: "", decimales: 0, label: "victimes de violences sexuelles enregistrées en 2025 (+8 %)", source: "ssmsiChiffres2026", annee: 2025, definition: "Victimes enregistrées par la police et la gendarmerie. Une hausse peut aussi venir de victimes qui portent davantage plainte." },
     ],
     constat: "Les violences physiques enregistrées par la police et la gendarmerie ont augmenté en moyenne de 6 % par an depuis 2016, avec des années de pause ou de baisse ; les violences sexuelles enregistrées, de 11 % par an en moyenne. Dans l'enquête de victimation, les habitants des grandes villes se disent plus souvent inquiets dans leur quartier et dans les transports, et à peine plus d'un sur deux est satisfait de l'action de proximité des forces de l'ordre.",
     constatSources: ["ssmsiChiffres2026", "ssmsiVRS"],
@@ -454,8 +520,8 @@ export const SUJETS = [
     couleur: "#eab308",
     question: "Comment ça se passe à l'école pour tes enfants, ou pour ceux de ton entourage ?",
     chiffres: [
-      { valeur: 95, unite: " points", decimales: 0, label: "d'écart en maths à 15 ans entre élèves très favorisés et très défavorisés, contre 83 en moyenne dans l'OCDE (PISA 2025)", source: "deppPisa2025" },
-      { valeur: 4, unite: "", decimales: 0, label: "pays de l'OCDE seulement où le lien statistique entre milieu social et résultats en maths est plus fort qu'en France (PISA 2022)", source: "hcspNiveauScolaire" },
+      { valeur: 95, unite: " points", decimales: 0, label: "d'écart en maths à 15 ans entre élèves très favorisés et très défavorisés, contre 83 en moyenne dans l'OCDE (PISA 2025)", source: "deppPisa2025", annee: 2025, definition: "Écart de score moyen en mathématiques entre les élèves les plus favorisés et les plus défavorisés selon l'indice socio-économique de l'enquête PISA." },
+      { valeur: 4, unite: "", decimales: 0, label: "pays de l'OCDE seulement où le lien statistique entre milieu social et résultats en maths est plus fort qu'en France (PISA 2022)", source: "hcspNiveauScolaire", annee: 2022, definition: "Comparaison, entre pays de l'OCDE, de la force du lien entre le milieu socio-économique des élèves et leurs résultats en mathématiques." },
     ],
     constat: "Les résultats des élèves de 15 ans baissent dans toute l'OCDE, et un peu plus vite en France en maths. Mais la France reste l'un des pays où le milieu social des parents pèse le plus sur la réussite, en lecture comme en maths.",
     constatSources: ["deppPisa2025", "hcspNiveauScolaire"],
@@ -476,8 +542,8 @@ export const SUJETS = [
     couleur: "#f97316",
     question: "Dans ton travail, qu'est-ce qui a changé ces dernières années ?",
     chiffres: [
-      { valeur: 8.2, unite: " %", decimales: 1, label: "de chômage au 3e trimestre 2026, 0,4 point de plus en un an", source: "inseeChomageT3" },
-      { valeur: 150000, unite: "", decimales: 0, label: "chômeurs de plus en un an, pour 2,6 millions au total", source: "inseeChomageT3" },
+      { valeur: 8.2, unite: " %", decimales: 1, label: "de chômage au 3e trimestre 2026, 0,4 point de plus en un an", source: "inseeChomageT3", annee: 2026, definition: "Chômage au sens du Bureau international du travail : sans emploi, disponible et en recherche active. France hors Mayotte." },
+      { valeur: 150000, unite: "", decimales: 0, label: "chômeurs de plus en un an, pour 2,6 millions au total", source: "inseeChomageT3", annee: 2026, definition: "Chômeurs au sens du Bureau international du travail, France hors Mayotte." },
     ],
     constat: "Après des années de baisse, le chômage remonte depuis 2025. Au 2e trimestre 2026, il a atteint son plus haut niveau depuis 2019, en dehors de la crise sanitaire. Selon l'Insee, une partie de la hausse vient de l'inscription automatique de nouveaux publics à France Travail (loi plein emploi), qui sont alors davantage comptés comme chômeurs.",
     constatSources: ["inseeChomageT2", "inseeChomageT3"],
@@ -490,10 +556,61 @@ export const SUJETS = [
     nuance: "Le chômage reste bien en dessous de son pic de 2015, et le sous-emploi (temps partiel subi) est à son plus bas depuis vingt ans. Le reconnaître rend le reste plus crédible.",
     nuanceSource: "inseeEmploi",
   },
+  {
+    id: "jeunes",
+    emoji: "🎓",
+    titre: "Jeunes",
+    accroche: "Pouvoir étudier, se loger et démarrer sans galérer.",
+    couleur: "#ec4899",
+    question: "Qu'est-ce qui coince le plus pour toi ou les jeunes autour de toi : le loyer, les études, le premier boulot ?",
+    chiffres: [
+      { valeur: 18.6, unite: " %", decimales: 1, label: "des 18-29 ans vivent sous le seuil de pauvreté en 2024, contre 15,4 % pour l'ensemble de la population", source: "inseePauvreteAge", annee: 2024, definition: "Seuil de pauvreté à 60 % du niveau de vie médian. Attention : le champ exclut les ménages dont la personne de référence est étudiante." },
+      { valeur: 1.5, unite: " M", decimales: 1, label: "de jeunes de 18 à 29 ans sous le seuil de pauvreté en 2024, 270 000 de plus qu'en 2020", source: "inseePauvreteAge", annee: 2024, definition: "1 496 000 personnes de 18 à 29 ans sous le seuil de 60 %, contre 1 228 000 en 2020 (France métropolitaine)." },
+    ],
+    constat: "La pauvreté des 18-29 ans progresse nettement : 15,7 % en 2020, 17,5 % en 2023, 18,6 % en 2024. Chez les moins de 18 ans, elle atteint 22,4 %. C'est la tranche d'âge adulte la plus touchée.",
+    constatSources: ["inseePauvreteAge"],
+    propositions: [
+      "Une garantie d'autonomie qui complète les revenus jusqu'au seuil de pauvreté, accessible dès 18 ans pour les jeunes indépendants fiscalement.",
+      "Abolir Parcoursup et la sélection à l'université publique, et instaurer le repas à 1 € dans les Crous.",
+      "Un billet unique pour les jeunes, valable dans les trains, les transports en commun et les vélos en libre-service.",
+    ],
+    propositionsSource: ["programmeNFP"],
+    nuance: "Ce taux ne compte pas les ménages dont la personne de référence est étudiante : il mesure mal la précarité des étudiants qui vivent seuls. Et ces mesures ont un coût, qui dépend beaucoup des conditions d'accès retenues : c'est une bonne question à poser à chaque candidat.",
+    nuanceSource: "inseePauvreteAge",
+  },
+  {
+    id: "independants",
+    emoji: "🛠️",
+    titre: "Indépendants et TPE",
+    accroche: "Vivre de son métier, sans tout porter seul.",
+    couleur: "#14b8a6",
+    question: "Ton activité, elle te permet de te verser un vrai revenu et de préparer ta retraite ?",
+    chiffres: [
+      { valeur: 9.6, unite: " %", decimales: 1, label: "des indépendants « classiques » n'ont tiré aucun revenu de leur activité en 2024 (hors agriculture et micro-entrepreneurs)", source: "inseeNonSalaries2114", annee: 2024, definition: "Part des non-salariés hors agriculture et hors micro-entrepreneurs dont le revenu d'activité est nul ou déficitaire : pas de bénéfice, ou pas de rémunération versée." },
+      { valeur: 1230, unite: " €", decimales: 0, label: "de pension brute moyenne par mois pour les anciens artisans et commerçants, contre 1 540 € pour l'ensemble des retraités", source: "inseeRetraitesNonSalaries", annee: 2020, definition: "Pension de droit direct brute, tous régimes, des retraités qui ont fait l'essentiel de leur carrière comme artisans ou commerçants. Données Drees de fin 2020." },
+    ],
+    constat: "En 2024, un indépendant classique gagne en moyenne 4 150 € par mois, mais ce revenu reste 5,6 % sous son niveau de 2019 une fois l'inflation déduite. Les écarts sont énormes : 680 € par mois en moyenne pour les micro-entrepreneurs, environ 3 100 € dans le commerce et l'artisanat commercial.",
+    constatSources: ["inseeNonSalaries2114"],
+    propositions: [
+      "Réserver une part de la sous-traitance des grands groupes aux TPE-PME et à l'artisanat local, et rendre le donneur d'ordre responsable.",
+      "Accompagner les petites entreprises face à la hausse du SMIC, par exemple avec des avances à taux zéro.",
+      "Conditionner les aides publiques aux entreprises à des critères sociaux et environnementaux.",
+    ],
+    propositionsSource: ["programmeNFP", "humaniteNFP"],
+    nuance: "La hausse du SMIC proposée par la gauche pèserait aussi sur les petits patrons qui ont des salariés : en 2024, les chiffrages compilés par l'OFCE allaient de 3 à 23 milliards d'euros. Mieux vaut le reconnaître et parler des aides prévues que le nier.",
+    nuanceSource: "ofceNFP",
+  },
 ];
 
 // Objections courantes, avec ce qu'elles ont de vrai.
 export const OBJECTIONS = [
+  {
+    id: "laxiste",
+    objection: "La gauche est laxiste sur la sécurité.",
+    vrai: "Les violences enregistrées augmentent, ce n'est pas un fantasme. Et une partie de la gauche critique durement certaines pratiques policières : le NFP proposait par exemple d'interdire les LBD et de démanteler les BRAV-M, ce que beaucoup lisent comme de la défiance envers la police.",
+    reponse: "Le même programme proposait plus de moyens là où ça compte : rétablir la police de proximité, maintenir toutes les gendarmeries, plus d'enquêteurs contre le narcotrafic et les réseaux mafieux, plus de magistrats et de greffiers pour juger vite. Demander : « Pour toi, qu'est-ce qui rendrait ton quartier plus sûr, concrètement ? »",
+    sources: ["programmeNFP", "ssmsiChiffres2026"],
+  },
   {
     id: "impots",
     objection: "La gauche, c'est des impôts en plus pour tout le monde.",
@@ -572,49 +689,55 @@ export const QUIZ = [
     affirmation: "Le taux de pauvreté en France est au plus haut depuis le début de la série Insee en 1996.",
     reponse: true,
     explication: "15,4 % en 2023, stable en 2024 : un record depuis 1996.",
+    nuance: "Le seuil est relatif (60 % du niveau de vie médian) : il mesure l'écart avec le reste de la population plus que la misère absolue.",
     source: "inseePauvrete2117",
   },
   {
     affirmation: "Les milliardaires français paient proportionnellement plus d'impôts que les autres foyers aisés.",
     reponse: false,
     explication: "Leur taux global était d'environ 26 %, contre 46 % pour les 0,1 % les plus riches (IPP, données 2016).",
+    nuance: "Ces données datent de 2016, avant la suppression de l'ISF et la flat tax : le chiffre a pu changer depuis, et l'IPP n'a pas encore actualisé l'étude.",
     source: "ippMilliardaires",
   },
   {
     affirmation: "Les aides publiques aux entreprises dépassent 100 milliards d'euros par an.",
     reponse: true,
     explication: "108 Md€ en 2023 au sens strict, et jusqu'à 211 Md€ au sens le plus large, selon une commission d'enquête du Sénat.",
+    nuance: "Le montant dépend beaucoup de ce qu'on compte comme une aide, et une partie sert à baisser le coût du travail peu qualifié pour soutenir l'emploi.",
     source: "senatAides",
   },
   {
     affirmation: "La France compte beaucoup plus de personnes nées à l'étranger que la moyenne de l'Union européenne.",
     reponse: false,
     explication: "14,0 % en France contre 14,4 % dans l'UE en 2025 : la France est dans la moyenne.",
+    nuance: "Être dans la moyenne nationale n'empêche pas des difficultés réelles dans certains territoires : le chiffre national ne dit pas tout.",
     source: "inseeImmigresUE",
   },
   {
     affirmation: "Les hôpitaux et cliniques ont perdu plus de 40 000 lits d'hospitalisation complète depuis 2013.",
     reponse: true,
     explication: "47 700 lits en moins entre fin 2013 et fin 2025, selon la Drees.",
+    nuance: "Une partie des fermetures correspond au « virage ambulatoire » (soins sans nuitée), et les places d'hospitalisation partielle augmentent.",
     source: "dreesLits",
   },
   {
     affirmation: "La suppression de l'ISF a fait revenir des milliers de grandes fortunes en France.",
     reponse: false,
     explication: "Les retours se comptent en centaines de foyers par an, pour des effets jugés « de faible ampleur ».",
+    nuance: "Les départs existent aussi, et le départ d'un actionnaire principal peut peser sur son entreprise : l'exil fiscal est réel, mais limité.",
     source: "franceStrategieISF",
   },
 ];
 
 // Conquêtes sociales portées par la gauche (au pouvoir, ou en négociant depuis l'opposition).
 export const HISTOIRE = [
-  { annee: "1936", titre: "Congés payés et semaine de 40 heures", texte: "Le Front populaire instaure deux semaines de congés payés." },
-  { annee: "1945", titre: "Sécurité sociale", texte: "Issue du programme du Conseil national de la Résistance, généralisée notamment par le ministre communiste Ambroise Croizat." },
-  { annee: "1981", titre: "Abolition de la peine de mort", texte: "Portée par Robert Badinter." },
-  { annee: "1982", titre: "Retraite à 60 ans, 39 heures, 5e semaine", texte: "Sous le gouvernement Mauroy." },
-  { annee: "1988", titre: "Revenu minimum d'insertion", texte: "Le RMI, ancêtre du RSA, créé sous Michel Rocard." },
-  { annee: "1999", titre: "CMU et PACS", texte: "La couverture maladie universelle ouvre l'accès aux soins à tous, et le PACS offre un cadre légal aux couples, y compris de même sexe." },
-  { annee: "2013", titre: "Mariage pour tous", texte: "L'égalité des droits pour les couples de même sexe." },
+  { annee: "1936", titre: "Congés payés et semaine de 40 heures", texte: "Le Front populaire instaure deux semaines de congés payés et la semaine de 40 heures. Les lois sont publiées le 26 juin 1936 ; les congés payés sont même votés à l'unanimité à la Chambre.", source: "anFrontPopulaire" },
+  { annee: "1945", titre: "Sécurité sociale", texte: "Créée par les ordonnances des 4 et 19 octobre 1945, dans l'esprit du programme du Conseil national de la Résistance. Pierre Laroque en est l'architecte et le ministre communiste Ambroise Croizat la met en place.", source: "secu80ans", nuance: "C'est une œuvre d'union nationale plus que de la seule gauche : le gouvernement provisoire du général de Gaulle réunissait communistes, socialistes, démocrates-chrétiens et gaullistes." },
+  { annee: "1981", titre: "Abolition de la peine de mort", texte: "Portée par Robert Badinter, promise par François Mitterrand, la loi du 9 octobre 1981 est adoptée à l'Assemblée par 363 voix contre 117.", source: "viePubliqueAbolition", nuance: "Des élus de droite, comme Pierre Bas ou Philippe Séguin, avaient défendu l'abolition avant 1981." },
+  { annee: "1982", titre: "Retraite à 60 ans, 39 heures, 5e semaine", texte: "Sous le gouvernement Mauroy, une ordonnance de janvier 1982 fixe la durée légale à 39 heures et la 5e semaine de congés payés ; une autre, en mars, ouvre la retraite à taux plein à 60 ans.", source: "viePublique1982", sources: ["viePublique1982", "cnamCongesPayes"] },
+  { annee: "1988", titre: "Revenu minimum d'insertion", texte: "Le RMI, ancêtre du RSA, est créé par la loi du 1er décembre 1988 sous Michel Rocard. Un an plus tard, 480 000 foyers en bénéficient.", source: "viePubliqueRMI" },
+  { annee: "1999", titre: "CMU et PACS", texte: "La couverture maladie universelle (loi du 27 juillet 1999) ouvre l'accès aux soins à tous, et le PACS (loi du 15 novembre 1999) offre un cadre légal aux couples, y compris de même sexe.", source: "senatCMU", sources: ["senatCMU", "viePubliqueCouple"] },
+  { annee: "2013", titre: "Mariage pour tous", texte: "La loi du 17 mai 2013 ouvre le mariage et l'adoption aux couples de même sexe, après plus de 170 heures de débats.", source: "viePubliqueCouple" },
   { annee: "2025", titre: "Suspension de la réforme des retraites", texte: "Négociée par les socialistes dans le budget de la Sécurité sociale pour 2026, avec un gouvernement qui n'est pas de gauche.", source: "viePubliqueRetraites" },
 ];
 
@@ -630,6 +753,8 @@ export const VOTE = {
   premierTour: "dimanche 18 avril 2027",
   secondTour: "dimanche 2 mai 2027",
   limiteInscription: "vendredi 12 mars 2027",
+  // Mêmes dates au format ISO, pour le compte à rebours et le rappel d'agenda.
+  iso: { inscription: "2027-03-12", premierTour: "2027-04-18", secondTour: "2027-05-02" },
   exception: "Dans certains cas (18 ans, déménagement pour le travail, nationalité récente), l'inscription reste possible jusqu'au 8 avril 2027.",
   sources: ["infoGouvPresidentielle"],
   recherche: "Faire voter quelqu'un qui partage déjà tes idées compte autant que convaincre. En France, en 2022, 16,5 % des électeurs étaient mal inscrits, souvent après un déménagement, et ils votent beaucoup moins. Une expérience menée en France a montré que de simples visites pour aider à s'inscrire augmentent nettement l'inscription, puis le vote.",
@@ -665,8 +790,8 @@ export const PROFILS = [
     portrait: "« Au moins eux, ils parlent des gens comme moi. »",
     entree: "Ne pas faire la morale. Reconnaître la colère, parler salaires et services publics, puis comparer les votes concrets plutôt que les discours.",
     question: "Qu'est-ce qui t'a donné envie de les écouter ?",
-    sujets: ["pouvoir-achat", "securite"],
-    objections: ["rn-social", "immigration", "fraude"],
+    sujets: ["pouvoir-achat", "securite", "independants"],
+    objections: ["rn-social", "immigration", "fraude", "laxiste"],
   },
   {
     id: "centre",
@@ -685,7 +810,7 @@ export const PROFILS = [
     portrait: "« La politique, ça ne me concerne pas. »",
     entree: "Parler de son quotidien (loyer, études, climat, premier boulot) et l'aider à s'inscrire : c'est souvent là que tout bloque.",
     question: "Qu'est-ce qui te prend le plus la tête en ce moment ?",
-    sujets: ["logement", "climat", "travail"],
+    sujets: ["jeunes", "logement", "climat"],
     objections: ["tous-pareils"],
   },
 ];
@@ -730,4 +855,32 @@ export const A_EVITER = [
   "Assener une avalanche de chiffres : les arguments seuls changent souvent peu les avis.",
   "Inventer ou arrondir un chiffre à son avantage : un seul faux chiffre ruine tout le reste.",
   "Vouloir gagner la discussion : l'objectif est qu'elle ou il y repense après.",
+];
+
+// Mentions légales (loi pour la confiance dans l'économie numérique, art. 6).
+// À COMPLÉTER avant toute mise en ligne publique : ne jamais inventer ces informations.
+export const EDITEUR = {
+  nom: "[à compléter : nom de la personne ou de l'association éditrice]",
+  directeur: "[à compléter : directeur ou directrice de la publication]",
+  contact: "[à compléter : adresse e-mail de contact]",
+  hebergeur: "[à compléter : nom, adresse et téléphone de l'hébergeur]",
+  imprimeur: "[à compléter : nom et adresse de l'imprimeur, obligatoire sur un tract imprimé]",
+  site: "", // adresse publique, par ex. https://exemple.fr/ (sert au QR code et aux liens partagés)
+  independance: "Gaucho est un outil militant en faveur de la gauche. Il n'est édité ni financé par un parti, un candidat ou une campagne, et ne fait l'objet d'aucune publicité payante.",
+};
+
+// Période de réserve (art. L49 du code électoral) : pas de nouvelle diffusion de propagande
+// à partir de la veille du scrutin. On commence le vendredi à minuit (heure de Paris), car
+// plusieurs territoires d'outre-mer votent le samedi, et on finit à 20 h le dimanche.
+export const RESERVE = [
+  { debut: "2027-04-15T22:00:00Z", fin: "2027-04-18T18:00:00Z", tour: "premier tour" },
+  { debut: "2027-04-29T22:00:00Z", fin: "2027-05-02T18:00:00Z", tour: "second tour" },
+];
+
+// Quoi de neuf : du plus récent au plus ancien. L'id sert au badge « nouveau ».
+export const NOUVEAUTES = [
+  { id: 4, date: "26 novembre 2026", titre: "Deux nouveaux sujets et l'entraînement", texte: "Sujets « Jeunes » et « Indépendants et TPE », objection « la gauche est laxiste », entraînement aux objections, fiche mémo, kit terrain, compte à rebours et rappel dans l'agenda, page « D'où vient ce chiffre » sur chaque donnée." },
+  { id: 3, date: "26 novembre 2026", titre: "Un partage pensé pour la personne", texte: "Les liens partagés ouvrent une fiche écrite pour la personne qui la reçoit, avec ses sources et un lien pour vérifier son inscription. L'image de partage porte l'adresse, un QR code et la nuance complète." },
+  { id: 2, date: "novembre 2026", titre: "Mode « À table » et portes d'entrée", texte: "Des fiches plein écran pour la discussion, quatre profils pour savoir par où commencer et une page pour aider à aller voter." },
+  { id: 1, date: "novembre 2026", titre: "Première version", texte: "Sujets, objections, méthode de dialogue et quiz, avec une source pour chaque chiffre." },
 ];
