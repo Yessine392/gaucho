@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gaucho · Parlons de ce qui compte</title>
+  <meta name="description" content="Préparer une conversation honnête pour convaincre un proche de voter à gauche : ses préoccupations, des chiffres sourcés, les objections et la bonne manière d'en parler.">
+  <meta name="theme-color" content="#0b0b14">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="modulepreload" href="data.js">
+  <link rel="modulepreload" href="vendor/qrcode.js">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Gaucho">
+  <meta property="og:title" content="Gaucho · Parlons de ce qui compte">
+  <meta property="og:description" content="Des chiffres vérifiés, leurs nuances et une méthode respectueuse pour parler politique avec un proche. Outil militant en faveur de la gauche.">
+  <meta property="og:image" content="og/accueil.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aurora" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  </div>
+
+  <header class="topbar">
+    <a href="#/" class="logo" aria-label="Accueil">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>gaucho</span>
+    </a>
+    <nav class="topnav" aria-label="Navigation principale" data-nav></nav>
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="Changer de thème">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+    </button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="dock" aria-label="Navigation mobile" data-nav></nav>
+
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
